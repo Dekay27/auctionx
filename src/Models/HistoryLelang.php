@@ -49,7 +49,19 @@ class HistoryLelang extends Database
   public function findAllByLelangId(string $lelangId): ?array
   {
     // $query = "SELECT `id_history`, `id_lelang`, `id_barang`, `history_lelang`.`id_user`, `penawaran_harga`, `nama_lengkap`, `username` FROM `history_lelang` JOIN `tb_masyarakat` ON `history_lelang`.`id_user` = `tb_masyarakat`.`id_user` WHERE `id_lelang` = ? GROUP BY `tb_masyarakat`.`id_user` ORDER BY `penawaran_harga` DESC;";
-    $query = "SELECT DISTINCT p1.*, p2.*, `tb_masyarakat`.* FROM `history_lelang` p1 INNER JOIN( SELECT DISTINCT `id_user`, MAX(`penawaran_harga`) harga FROM `history_lelang` WHERE `id_lelang` = ? GROUP BY `id_user` ORDER BY `penawaran_harga` DESC ) p2 ON `p1`.`id_user` = p2.`id_user` INNER JOIN `tb_masyarakat` ON p1.id_user = `tb_masyarakat`.`id_user` WHERE p1.`id_lelang` = ? AND `p1`.`penawaran_harga` = p2.harga ORDER BY `p1`.`penawaran_harga` DESC";
+    $query = "
+              SELECT p1.*, p2.harga, tb_masyarakat.*
+              FROM history_lelang p1
+              INNER JOIN (
+                  SELECT id_user, MAX(penawaran_harga) AS harga
+                  FROM history_lelang
+                  WHERE id_lelang = ?
+                  GROUP BY id_user
+              ) p2 ON p1.id_user = p2.id_user AND p1.penawaran_harga = p2.harga
+              INNER JOIN tb_masyarakat ON p1.id_user = tb_masyarakat.id_user
+              WHERE p1.id_lelang = ?
+              ORDER BY p1.penawaran_harga DESC
+              ";
 
     $statement = $this->mysqli->prepare($query);
     $statement->bind_param("ss", $lelangId, $lelangId);

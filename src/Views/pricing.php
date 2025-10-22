@@ -7,7 +7,7 @@
         <div class="row">
           <!-- text -->
           <div class="col-md-12 col-12 mb-6">
-            <h1 class="display-4 fw-bold ls-sm">Find a plan that s right for you</h1>
+            <h1 class="display-4 fw-bold ls-sm">Find a plan that's right for you</h1>
           </div>
           <div class="col-xl-4 col-lg-6 col-md-12 col-12 mb-3">
             <!-- card -->
