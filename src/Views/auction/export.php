@@ -69,8 +69,8 @@ header("Content-Disposition: attachment; filename=auction_data-" . date('Ymd') .
               <td><?= $row['deskripsi_barang']; ?></td>
               <td><?= $startDate->format('d/m/Y')  ?></td>
               <td><?= $dueDate->format('d/m/y');  ?></td>
-              <td>Rp <?= $price; ?> </td>
-              <td>Rp <?= $finalPrice; ?> </td>
+              <td>GHs <?= $price; ?> </td>
+              <td>GHs <?= $finalPrice; ?> </td>
               <td><?= $row['status']; ?></td>
             </tr>
           <?php endforeach; ?>

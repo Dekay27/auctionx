@@ -19,18 +19,13 @@ $auth = $model['auth'] ?? Auth::getSession();
           <i data-feather="menu" class="nav-icon icon-xs"> </i>
         </button>
       <?php endif; ?>
-      <div class="d-none d-md-none d-lg-block me-auto">
-        <form class="d-flex align-items-center">
-          <input type="search" class="form-control" placeholder="Search" />
-        </form>
-      </div>
       <?php if (isset($auth)) : ?>
         <ul class="navbar-nav navbar-right-wrap ms-auto d-flex nav-top-wrap">
-          <?php if ($auth['level'] == "masyarakat") :  ?>
-            <li class="me-2">
-              <a href="pricing/" class="btn btn-primary">Upgrade to premium</a>
-            </li>
-          <?php endif;  ?>
+<!--          --><?php //if ($auth['level'] == "masyarakat") :  ?>
+<!--            <li class="me-2">-->
+<!--              <a href="pricing/" class="btn btn-primary">Upgrade to premium</a>-->
+<!--            </li>-->
+<!--          --><?php //endif;  ?>
           <li class="dropdown ms-2">
             <a class="rounded-circle" href="#" role="button" id="dropdownUser" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <div class="avatar avatar-md avatar-indicators avatar-online">

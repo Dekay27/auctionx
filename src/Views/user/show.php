@@ -55,11 +55,11 @@
               <div class="col-12 mb-5">
                 <!-- text -->
                 <h5 class="text-uppercase">Position</h5>
-                <p class="mb-0">Software Engineering</p>
+                <p class="mb-0">HR Manager</p>
               </div>
               <div class="col-6 mb-5">
                 <h5 class="text-uppercase">Phone</h5>
-                <p class="mb-0">+10313081301</p>
+                <p class="mb-0">+23324081301</p>
               </div>
               <div class="col-6 mb-5">
                 <h5 class="text-uppercase">
@@ -69,11 +69,11 @@
               </div>
               <div class="col-6">
                 <h5 class="text-uppercase">Email</h5>
-                <p class="mb-0">hello.mail@gmail.com</p>
+                <p class="mb-0">hello.admin@gmail.com</p>
               </div>
               <div class="col-6">
                 <h5 class="text-uppercase">Location</h5>
-                <p class="mb-0">Bali, Indonesia</p>
+                <p class="mb-0">Accra, Ghana</p>
               </div>
             </div>
           </div>

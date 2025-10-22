@@ -113,7 +113,7 @@ $maxActivity = $length > 3 ? 3 : $length;
                               </div>
                             </td>
                             <td>
-                              <span>Rp <?= number_format((int) $history['penawaran_harga'], 2, ".", ","); ?></span>
+                              <span>GHs <?= number_format((int) $history['penawaran_harga'], 2, ".", ","); ?></span>
                             </td>
                           </tr>
                         <?php endforeach; ?>
@@ -173,7 +173,7 @@ $maxActivity = $length > 3 ? 3 : $length;
                         <h4 class="mb-1 h5">
                           <a href="./user/<?= $model['history'][$i]['username'] ?>"><?= $model['history'][$i]['nama_lengkap']; ?></a>
                         </h4>
-                        <p class="mb-0 text-muted">Rp <?= number_format((int) $model['history'][$i]['penawaran_harga'], 2, ",", "."); ?></p>
+                        <p class="mb-0 text-muted">GHs <?= number_format((int) $model['history'][$i]['penawaran_harga'], 2, ",", "."); ?></p>
                       </div>
                     </div>
                   </li>

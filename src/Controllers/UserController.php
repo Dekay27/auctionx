@@ -92,8 +92,8 @@ class UserController
     }
     View::render("404");
   }
-  
-  public function update(string $userId, string $redirect = null): void
+
+  public function update(string $userId, ?string $redirect = null): void
   {
     $mysqli = Database::getConnection();
     $mysqli->begin_transaction();
@@ -146,7 +146,7 @@ class UserController
       $request->username = htmlspecialchars($_POST['username']);
       $request->telp = htmlspecialchars($_POST['telp']);
       $request->nama_lengkap = htmlspecialchars($_POST['name']);
-      $request->password = htmlspecialchars($_POST['password']);      
+      $request->password = htmlspecialchars($_POST['password']);
       Auth::do_register($request);
 
       $mysqli->commit();

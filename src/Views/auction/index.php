@@ -15,7 +15,7 @@ use NataInditama\Auctionx\Models\HistoryLelang;
           <div class="d-flex justify-content-center flex-column align-items-start" style="height: 100%;">
             <h1><?= htmlspecialchars($model['products'][0]['nama_barang']) ?></h1>
             <p><?= htmlspecialchars($model['products'][0]['deskripsi_barang']) ?></p>
-            <p>Current bid: <b>Rp <?= htmlspecialchars(number_format($model['products'][0]['harga_awal'], 2, ",", ".")) ?></b></p>
+            <p>Current bid: <b>GHs <?= htmlspecialchars(number_format($model['products'][0]['harga_awal'], 2, ",", ".")) ?></b></p>
             <a href="./auction/<?= $model['products'][0]['id_barang']; ?>" class="btn btn-primary text-uppercase">Place A Bid</a>
           </div>
         </div>
@@ -37,7 +37,7 @@ use NataInditama\Auctionx\Models\HistoryLelang;
     <?php if (is_array($model['products']) && count($model['products']) > 0) : ?>
       <?php require_once __DIR__ . "/../components/auction/card.php"; ?>
     <?php else : ?>
-      <p>Lelang tidak ditemukan</p>
+      <p>No auction found</p>
     <?php endif; ?>
   </div>
 </div>

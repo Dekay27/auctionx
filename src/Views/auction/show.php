@@ -182,7 +182,7 @@ $maxActivity = $length > 3 ? 3 : $length;
                     </div>
                     <div>
                       <div>
-                        <p class="text-dark mb-0">Rp <?= $price ?></p>
+                        <p class="text-dark mb-0">GHs <?= $price ?></p>
                       </div>
                     </div>
                   </div>
@@ -216,7 +216,7 @@ $maxActivity = $length > 3 ? 3 : $length;
                       <h4 class="mb-1 h5">
                         <a href="./user/<?= htmlspecialchars($model['history'][$i]['username']) ?>"><?= $model['history'][$i]['nama_lengkap']; ?></a>
                       </h4>
-                      <p class="mb-0 text-muted">Rp <?= number_format((int) $model['history'][$i]['penawaran_harga'], 2, ",", "."); ?></p>
+                      <p class="mb-0 text-muted">GHs <?= number_format((int) $model['history'][$i]['penawaran_harga'], 2, ",", "."); ?></p>
                     </div>
                   </div>
                 </li>

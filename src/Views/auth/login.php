@@ -23,7 +23,7 @@
               <label for="level" class="form-label">Level</label>
               <select name="level" id="level" class="form-control">
                 <option value="masyarakat">Free Account</option>
-                <option value="admin">Premium Account</option>
+                <option value="admin">Admin Account</option>
               </select>
             </div>
             <div>
@@ -32,7 +32,7 @@
               </div>
               <div class="d-md-flex justify-content-between mt-4">
                 <div class="mb-2 mb-md-0">
-                  Don't have an account yet? <a href="./pricing" class="fs-5">Create an account </a>
+                  Don't have an account yet? <a href="./register" class="fs-5">Create an account </a>
                 </div>
               </div>
             </div>

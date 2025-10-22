@@ -43,7 +43,7 @@
                       </div>
                     </td>
                     <td class="align-middle"><?= $startDate->format('d/m/Y') . " - " . $dueDate->format('d/m/y');  ?></td>
-                    <td class="align-middle">Rp <?= $price; ?> </td>
+                    <td class="align-middle">GHs <?= $price; ?> </td>
                     <td class="align-middle">
                       <?php if ($row['status'] == "dibuka") : ?>
                         <span class="badge p-2 bg-info">Opened</span>

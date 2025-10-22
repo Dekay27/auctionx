@@ -1,7 +1,7 @@
 <?php
 
 // Site
-const SITE_NAME = "Auctionx";
+const SITE_NAME = "Auction App";
 const SITE_BASE_URL = "http://localhost:5000/public/";
 
 // Database

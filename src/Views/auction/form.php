@@ -76,7 +76,7 @@
                           <h4 class="mb-1 h5">
                             <a href="./user/<?= htmlspecialchars($model['history'][0]['username']) ?>"><?= $model['history'][0]['nama_lengkap']; ?></a>
                           </h4>
-                          <p class="mb-0 text-muted">Rp <?= number_format((int) $model['history'][0]['penawaran_harga'], 2, ",", "."); ?></p>
+                          <p class="mb-0 text-muted">GHs <?= number_format((int) $model['history'][0]['penawaran_harga'], 2, ",", "."); ?></p>
                         </div>
                       </div>
                     </li>
